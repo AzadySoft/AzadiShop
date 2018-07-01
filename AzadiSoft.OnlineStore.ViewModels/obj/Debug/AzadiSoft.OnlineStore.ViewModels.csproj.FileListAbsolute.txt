@@ -1,0 +1,8 @@
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\bin\Debug\AzadiSoft.OnlineStore.ViewModels.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\bin\Debug\AzadiSoft.OnlineStore.ViewModels.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\obj\Debug\AzadiSoft.OnlineStore.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\obj\Debug\AzadiSoft.OnlineStore.ViewModels.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\obj\Debug\AzadiSoft.OnlineStore.ViewModels.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\bin\Debug\AzadiSoft.OnlineStore.Resources.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\bin\Debug\AzadiSoft.OnlineStore.Resources.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.ViewModels\obj\Debug\AzadiSoft.OnlineStore.ViewModels.csprojResolveAssemblyReference.cache
