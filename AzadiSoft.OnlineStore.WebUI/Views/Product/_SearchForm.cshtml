@@ -1,0 +1,89 @@
+﻿@model AzadiSoft.OnlineStore.ViewModels.ProductListViewModel
+@using AzadiSoft.OnlineStore.Resources
+@{
+    var pageTitle = Messages.ProductList;
+
+    ViewBag.Title = pageTitle;
+
+    var sample = Model.SampleModel;
+    var products = Model.Products;
+    var index = 0;
+    var btnAddToCart = "btnAddToCart_";
+
+    var holderId = "product-holder";
+
+}
+
+<script type="text/javascript">
+
+    function getHolder() {
+
+        return $('#@holderId');
+
+    }
+
+    function getTitleBox() {
+        return $('#@Html.IdFor(x => x.Product_Title)');
+    }
+
+    function searchProduct() {
+
+        var url = '@Url.Action("Search")';
+
+        var title = getTitleBox().val();
+
+        var postData = {
+            title: title
+        }
+
+        ajaxCall(url, postData, 'post', function(result) {
+
+            getHolder().html(result);
+
+        });
+        
+    }
+
+    function cancelSearch() {
+
+        getTitleBox().val('');
+
+        searchProduct();
+    }
+
+    $(document).ready(function() {
+
+        getTitleBox().on('keypress', function(e) {
+
+            if (e.keyCode == 13) {
+                searchProduct();
+            }
+            else if (e.keyCode == 27) {
+                cancelSearch();
+            }
+
+        });
+
+    })
+
+</script>
+
+
+    <table class="table-search">
+        <tr>
+            <td>
+                @Html.LabelFor(x => x.Product_Title)
+            </td>
+            <td>
+                @Html.EditorFor(x => x.Product_Title, new { htmlAttributes = new { @class = "form-control" } })
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="btnSearch" type="button" class="btn btn-success" onclick="searchProduct();">@Consts.Search</button>
+                &nbsp;
+                <button id="btnCancelSearch" type="button" class="btn btn-danger" onclick="cancelSearch();">@Consts.CancelSearch</button>
+
+            </td>
+        </tr>
+    </table>

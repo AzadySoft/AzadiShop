@@ -1,0 +1,26 @@
+﻿@using AzadiSoft.OnlineStore.Resources
+@model AzadiSoft.OnlineStore.ViewModels.ProductListViewModel
+
+
+@{
+    var pageTitle = Messages.ProductList;
+
+    ViewBag.Title = pageTitle;
+
+    var sample = Model.SampleModel;
+    var products = Model.Products;
+    var index = 0;
+    var btnAddToCart = "btnAddToCart_";
+
+    var holderId = "product-holder";
+}
+
+<h2>@pageTitle</h2>
+
+@Html.Partial("_SearchForm", Model)
+
+<div id="@holderId">
+
+    @Html.Partial("_ProductList", Model)
+
+</div>

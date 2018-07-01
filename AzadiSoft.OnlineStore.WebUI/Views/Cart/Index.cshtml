@@ -1,0 +1,157 @@
+﻿@using AzadiSoft.OnlineStore.Resources
+@using AzadiSoft.OnlineStore.ViewModels
+@model IList<AzadiSoft.OnlineStore.ViewModels.CardItem>
+
+@{
+
+    var pageTitle = Messages.ShoppingCart;
+
+    ViewBag.Title = pageTitle;
+
+    var sample = new CardItem();
+
+    var index = 0;
+
+    var records = Model;
+
+    var productCount = records.Sum(x => x.Quantity);
+
+    var totalPrice = records.Sum(x => x.TotalPrice);
+}
+
+<h2>@pageTitle</h2>
+
+<script type="text/javascript">
+
+    function reloadCart() {
+        location.reload();
+    }
+
+    function editRecord(productId, count) {
+
+        var result = prompt('@Messages.EnterNewValue', count);
+
+        var url = '@Url.Action("UpdateCartItem")';
+
+        var postData = {
+            productId: productId,
+            count: result
+        }
+
+        ajaxCall(url, postData, 'post', function (result) {
+
+            if (result.success == false) {
+                alert(result.errorMsg);
+                return;
+            }
+
+            alert('@Messages.CartUpdated');
+            reloadCart();
+        });
+
+    }
+
+    function deleteItem(productId) {
+
+        if (confirm('@Messages.AreYouSureDeleteItem')) {
+
+            var url = '@Url.Action("RemoveFromCart")';
+
+            var postData = {
+                productId: productId
+            }
+
+            ajaxCall(url, postData, 'post', function(result) {
+                alert('@Messages.ProductRemovedFromCart');
+                reloadCart();
+            });
+
+
+        }
+
+    }
+
+    function checkOut() {
+        if (confirm('@Messages.AreYouSureToCheckOut')) {
+
+            var url = '@Url.Action("CheckOut")';
+
+            ajaxCall(url, {}, 'post', function(result) {
+
+                if (result.success == false) {
+
+                    alert(result.errorMsg);
+
+                    return;
+
+                }
+
+                alert('@Messages.SuccessfulPurchase');
+
+                var homePageUrl = '@Url.Action("Index", "Home")';
+
+                location.replace(homePageUrl);
+
+            });
+        }
+    }
+
+</script>
+
+<table class="table-cart">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(x => sample.Product_Title)</th>
+        <th>@Html.DisplayNameFor(x => sample.Quantity)</th>
+        <th>@Html.DisplayNameFor(x => sample.UnitPrice)</th>
+        <th>@Html.DisplayNameFor(x => sample.TotalPrice)</th>
+        <th>@Consts.Edit</th>
+        <th>@Consts.Delete</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    @foreach (var item in records)
+    {
+        index++;
+        var id = item.Product_ID;
+        var count = item.Quantity;
+        <tr>
+            <td>@index</td>
+            <td>@item.Product_Title</td>
+            <td>@item.Quantity.ToString(Consts.DecimalNumberFormat)</td>
+            <td>@item.UnitPrice.ToString(Consts.DecimalNumberFormat)</td>
+            <td>@item.TotalPrice.ToString(Consts.DecimalNumberFormat)</td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="editRecord(@id,@count);" >@Consts.Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger" onclick="deleteItem(@id);" >@Consts.Delete</button>
+            </td>
+
+        </tr>
+    }
+    </tbody>
+
+</table>
+
+<hr/>
+
+<table class="table-summary">
+    <tr>
+        <td>@Messages.ProductCount</td>
+        <td>@productCount</td>
+    </tr>
+    
+    <tr>
+        <td>@Messages.TotalPriceFactor</td>
+        <td>@totalPrice.ToString(Consts.DecimalNumberFormat)</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button id="btnCheckOut" type="button" class="btn btn-success" onclick="checkOut();">@Messages.CheckOut</button>
+        </td>
+    </tr>
+
+</table>

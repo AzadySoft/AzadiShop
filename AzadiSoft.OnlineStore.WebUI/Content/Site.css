@@ -1,0 +1,134 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+table.table-product {
+    border: 1px black solid;
+    width: 100%;
+    direction: rtl;
+}
+
+h1,h2,h3,h4 {
+    font-family: tahoma;
+}
+
+table.table-product td {
+    padding: 10px;
+    border: 1px black solid;
+    text-align: center;
+}       
+    table.table-product th {
+        padding: 10px;
+        border: 1px black solid;
+        background-color: gray;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+table.product-view {
+    direction: rtl;
+}
+
+table.product-view td {
+    padding: 10px;
+}
+
+.product-logo {
+    width: 400px;
+    height: 300px;
+}
+
+
+.specs-title {
+    background: #f0f1f2;
+    padding: 9px 21px;
+    margin-left: 19px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.specs-value {
+    background: #f7f9fa;
+    padding: 9px 21px;
+    color: #777;
+}
+
+table.table-cart {
+    width: 100%;
+    direction: rtl;
+}
+
+table.table-cart td {
+    padding: 10px;
+    border: 1px black solid;
+    text-align: center;
+}
+table.table-cart th {
+    padding: 10px;
+    border: 1px black solid;
+    background-color: gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+table.table-summary {
+    direction: rtl;
+    float: left;
+}
+
+table.table-summary td {
+    padding: 10px;
+    border: 1px black solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+.photo-list {
+    list-style-type: none;
+}
+
+.photo-list li {
+    float: left;
+    margin: 10px;
+    border: 1px black solid;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+}
+
+.photo-list li img {
+    width: 150px;
+}
+
+#main-photo {
+    /*width: 450px;*/
+    height: 400px;
+}
+
+table.table-search {
+    width: 400px;
+    direction: rtl;
+}
+
+    table.table-search td {
+        padding: 10px;
+        border: 1px black solid;
+        text-align: center;
+    }

@@ -1,0 +1,56 @@
+﻿@using AzadiSoft.OnlineStore.Resources
+@model AzadiSoft.OnlineStore.ViewModels.ProductListViewModel
+
+@{
+    var pageTitle = Messages.ProductList;
+
+    ViewBag.Title = pageTitle;
+
+    var sample = Model.SampleModel;
+    var products = Model.Products;
+    var index = 0;
+    var btnAddToCart = "btnAddToCart_";
+}
+
+<table class="table-product">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>@Html.DisplayNameFor(x => sample.Title)</th>
+            <th>@Html.DisplayNameFor(x => sample.Description)</th>
+            <th>@Html.DisplayNameFor(x => sample.Price)</th>
+            <th>@Html.DisplayNameFor(x => sample.StockQuantity)</th>
+            <th>@Messages.ViewDetails</th>
+            <th>@Messages.AddToCart</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in products)
+        {
+            var id = item.ID;
+
+            index++;
+
+            var textBoxId = "textbox_" + id;
+            var btnAddId = btnAddToCart + id;
+
+            <tr>
+
+                <td>@index</td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.Price.ToString(Consts.DecimalNumberFormat)</td>
+                <td>@item.StockQuantity</td>
+                <td>@Html.ActionLink(Messages.ViewDetails, "View", new { item.ID }, new { target = "_blank" })</td>
+                <td>
+                    @Html.TextBox(textBoxId, 1, new { @class = "form-control", style = "display:inline; width:80px;" })
+                    <button id="@btnAddId" type="button" class="btn btn-success" onclick="addToCart(@id, $('#@textBoxId').val() );">@Messages.AddToCart</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+

@@ -1,0 +1,35 @@
+﻿@using AzadiSoft.OnlineStore.Resources
+
+<script type="text/javascript">
+
+    function addToCart(productId, count) {
+
+        if (confirm('@Messages.AreYouSure')) {
+
+            var url = '@Url.Action("AddToCart","Cart")';
+
+            var postData = {
+                productId: productId,
+                count: count
+            }
+
+            ajaxCall(url, postData, 'post', function(result) {
+
+                if (result.success == false) {
+                    alert(result.errorMsg);
+                    return;
+                }
+
+                alert('@Messages.ProductAddedToCart');
+
+                var target = '@Url.Action("Index","Cart")';
+
+                location.href = target;
+
+            });
+
+        }
+
+    }
+
+</script>

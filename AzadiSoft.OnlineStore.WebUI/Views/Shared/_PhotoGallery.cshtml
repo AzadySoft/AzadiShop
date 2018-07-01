@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AzadiSoft.OnlineStore.ViewModels.PhotoViewModel>
+@{
+    var photos = Model;
+}
+
+<script type="text/javascript">
+
+    function changePhoto(img) {
+
+        var mainPhoto = $('#main-photo');
+        mainPhoto.attr('src', img.attr('src'));
+    }
+
+</script>
+
+<ul class="photo-list">
+    @foreach (var photo in photos)
+    {
+        <li>
+            <img alt="@photo.Title" src="@Url.Content(photo.ImageURL)" onclick="changePhoto($(this));"/>
+        </li>
+    }
+</ul>

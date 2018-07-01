@@ -1,0 +1,72 @@
+﻿@using AzadiSoft.OnlineStore.Resources
+@model AzadiSoft.OnlineStore.ViewModels.ProductViewModel
+
+@{
+    var product = Model;
+
+
+    var pageTitle = Messages.ViewProductDetail + " - " + product.Title;
+
+    ViewBag.Title = pageTitle;
+
+
+    var specs = product.ProductSpecMappings;
+
+    var id = product.ID;
+    var btnAddToCart = "btnAddToCart_";
+
+    var textBoxId = "textbox_" + id;
+    var btnAddId = btnAddToCart + id;
+
+}
+
+<h2>@pageTitle</h2>
+
+<table class="product-view">
+    
+    <tr>
+        <td class="product-logo">
+            <img id="main-photo" alt="@product.Title" src="@Url.Content(product.FirstPhotoUrl)"/>
+        </td>
+    </tr>
+    @if (product.Photos.Count > 1)
+    {
+        <tr>
+            <td colspan="2">
+                @Html.Partial("_PhotoGallery", product.Photos)
+            </td>
+        </tr>
+    }
+    <tr>
+        <td colspan="2">
+            <h3>@product.Title</h3>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <h4>@product.Description</h4>
+            @product.FullText
+        </td>
+
+    </tr>
+    <tr>
+        <td colspan="2">
+            
+            <table width="100%">
+                @foreach (var spec in specs)
+                {
+                    <tr>
+                        <td class="specs-title">@spec.Spec_Title</td>
+                        <td class="specs-value">@spec.SpecOption_Title</td>
+                    </tr>
+                }
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+@Html.TextBox(textBoxId,1,new{@class="form-control", style="display:inline; width:80px;"})
+<button id="@btnAddId" type="button" class="btn btn-success" onclick="addToCart(@id, $('#@textBoxId').val() );" >@Messages.AddToCart</button>
