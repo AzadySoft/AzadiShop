@@ -1,0 +1,14 @@
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DataLayer.dll.config
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DataLayer.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DataLayer.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\obj\Debug\AzadiSoft.OnlineStore.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\obj\Debug\AzadiSoft.OnlineStore.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\obj\Debug\AzadiSoft.OnlineStore.DataLayer.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\obj\Debug\AzadiSoft.OnlineStore.DataLayer.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DataLayer\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.dll.config

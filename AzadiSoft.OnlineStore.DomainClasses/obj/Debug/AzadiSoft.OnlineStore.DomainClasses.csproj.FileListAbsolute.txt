@@ -1,0 +1,11 @@
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\obj\Debug\AzadiSoft.OnlineStore.DomainClasses.csproj.CoreCompileInputs.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\obj\Debug\AzadiSoft.OnlineStore.DomainClasses.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\obj\Debug\AzadiSoft.OnlineStore.DomainClasses.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\AzadiSoft.OnlineStore.DomainClasses.dll.config
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\EntityFramework.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\EntityFramework.xml
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.DomainClasses\obj\Debug\AzadiSoft.OnlineStore.DomainClasses.csprojResolveAssemblyReference.cache
