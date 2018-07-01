@@ -1,0 +1,10 @@
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\bin\Debug\AzadiSoft.OnlineStore.Resources.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\bin\Debug\AzadiSoft.OnlineStore.Resources.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.csprojResolveAssemblyReference.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.Messages.resources
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.csproj.GenerateResource.Cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.csproj.CoreCompileInputs.cache
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.dll
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.pdb
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.MenuItems.resources
+C:\Users\arya.aghaei\source\repos\AzadiSoft.OnlineStore\AzadiSoft.OnlineStore.Resources\obj\Debug\AzadiSoft.OnlineStore.Resources.Consts.resources
